@@ -1,0 +1,24 @@
+.logo {
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo__web {
+  color: $logo-color ;
+  font-family: $logo-font;
+  font-weight: 700;
+}
+.logo__studio {
+  color: #000000;
+  font-family: $logo-font;
+  font-weight: 700;
+}
+
+.logo__studio--footer{
+  color: $white-color;
+}
+.logo__link--footer{
+    display: inline-block;
+  margin-bottom: 30px;
+
+}

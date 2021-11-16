@@ -1,0 +1,40 @@
+.contact {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.contac__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contac__link {
+  display: flex;
+  align-items: center;
+  color: var(--description-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $logo-color;
+  }
+}
+
+.contac__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
