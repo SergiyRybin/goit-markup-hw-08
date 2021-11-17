@@ -63,24 +63,33 @@ header {
 // }
 .nav {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   min-height: 60px;
 }
 .menu-button {
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 10px 10px 0;
-  padding: 0;
+  padding: 10px;
+  margin: 0;
 
-  border: none;
+  // border: none;
   background-color: transparent;
+
+  
+  
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+ 
 }
+
+
+
 
 .menu-button .icon-cross {
   display: none;
@@ -107,7 +116,7 @@ header {
   &.is-open {
     display: block;
   }
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
 }
