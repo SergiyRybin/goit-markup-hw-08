@@ -316,17 +316,18 @@ p {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-left: 15px;
 }
 
 .logo__web {
   color: #2196f3;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
 }
 
 .logo__studio {
   color: #000000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
 }
 
@@ -346,7 +347,6 @@ header {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   min-height: 60px;
 }
@@ -358,6 +358,13 @@ header {
   margin: 10px 10px 10px 0;
   padding: 0;
   border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -373,6 +380,7 @@ header {
 }
 
 .menu-container {
+  display: none;
   position: absolute;
   background-color: #ececec;
   padding: 20px;
@@ -384,6 +392,12 @@ header {
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .contact {
