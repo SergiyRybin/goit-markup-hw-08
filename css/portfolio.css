@@ -353,30 +353,20 @@ header {
 }
 
 .menu-button {
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0;
   margin: 0;
-  background-color: transparent;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .menu-container {
@@ -392,6 +382,12 @@ header {
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .contact {

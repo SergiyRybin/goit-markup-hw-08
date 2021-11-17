@@ -69,17 +69,19 @@ header {
 }
 .menu-button {
   
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0;
   margin: 0;
 
-  // border: none;
-  background-color: transparent;
+  border: none;
+  // background-color: transparent;
 
   
-  
+ 
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -90,15 +92,14 @@ header {
 
 
 
-
 .menu-button .icon-cross {
-  display: none;
+  // display: none;
 }
 .menu-button.is-open .icon-cross {
-  display: block;
+  // display: block;
 }
 .menu-button.is-open .icon-menu {
-  display: none;
+  // display: none;
 }
 
 .menu-container {
@@ -116,7 +117,7 @@ header {
   &.is-open {
     display: block;
   }
-  // @media screen and (min-width: 768px) {
-  //   display: none;
-  // }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
