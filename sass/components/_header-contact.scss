@@ -1,40 +1,77 @@
-.contact {
-  display: flex;
-  text-align: center;
-  margin-left: auto;
-  list-style: none;
-  padding: 0;
-}
+// .contact {
+//   display: flex;
+//   text-align: center;
+//   margin-left: auto;
+//   list-style: none;
+//   padding: 0;
+// }
 
-.contac__item {
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+// .contac__item {
+//   margin-right: 30px;
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+// .contac__link {
+//   display: flex;
+//   align-items: center;
+//   color: var(--description-color);
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//
+//   cursor: pointer;
+
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     color: $logo-color;
+//   }
+// }
+
+// .contac__icon {
+//   fill: currentColor;
+//   margin-right: 10px;
+// }
+
+.contac__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
 .contac__link {
-  display: flex;
-  align-items: center;
-  color: var(--description-color);
+  color: $description-color;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  cursor: pointer;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.17;
 
-  &:hover,
-  &:focus {
-    color: $logo-color;
+    &:hover,
+    &:focus {
+      color: $logo-color;
+    }
   }
 }
-
-.contac__icon {
-  fill: currentColor;
-  margin-right: 10px;
+.contac__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.contact {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
