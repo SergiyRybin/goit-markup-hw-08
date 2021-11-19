@@ -1,43 +1,43 @@
-// .contact {
-//   display: flex;
-//   text-align: center;
-//   margin-left: auto;
-//   list-style: none;
-//   padding: 0;
-// }
+.contact {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+}
 
-// .contac__item {
-//   margin-right: 30px;
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
+.contac__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
-// .contac__link {
-//   display: flex;
-//   align-items: center;
-//   color: var(--description-color);
-//   font-style: normal;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//
-//   cursor: pointer;
+.contac__link {
+  display: flex;
+  align-items: center;
+  color: var(--description-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 
-//   &:hover,
-//   &:focus {
-//     color: $logo-color;
-//   }
-// }
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// .contac__icon {
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
+  &:hover,
+  &:focus {
+    color: $logo-color;
+  }
+}
+
+.contac__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 
 .contac__icon {
   @media screen and (max-width: 767px) {
@@ -74,4 +74,34 @@
     display: flex;
     flex-direction: column-reverse;
   }
+}
+.menu__social {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 48px;
+
+    & a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+
+      letter-spacing: 0.02em;
+
+      color: $logo-color;
+    }
+    & li {
+      margin-right: 20px;
+    }
+    & li:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.menu__social--icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 22px;
+  fill: currentColor;
 }

@@ -1,25 +1,53 @@
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  display: flex;
-  justify-content: center;
-
-  & li {
-      margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 450px;
+    margin: 0 auto;
+    & li {
+      margin-bottom: 30px;
+    }
+    & li:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+    & li:last-child {
+      margin-bottom: 0;
+    }
   }
-  & li:last-child{margin-right: 0;}
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    & li {
+      margin-right: 30px;
+    }
+    & li:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-
 .client__link {
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -31,12 +59,24 @@
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, &:focus{
-      color: $logo-color;
-  border: 1px solid $logo-color;
+  &:hover,
+  &:focus {
+    color: $logo-color;
+    border: 1px solid $logo-color;
+  }
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  
+  }
 
-}
-
+  
+  
 }
 
 .client__icon {

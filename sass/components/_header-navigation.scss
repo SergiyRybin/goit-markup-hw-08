@@ -1,89 +1,65 @@
-header {
-  border-bottom: 1px solid #ececec;
-  position: relative;
-}
-// .header {
-//   display: flex;
-//   align-items: center;
-// }
 
-// .navigation {
-//   margin-left: 93px;
-// }
+// // // .header {
+// // //   display: flex;
+// // //   align-items: center;
+// // // }
 
-// .navigation__site {
-//   display: flex;
-//   list-style: none;
-//   margin: 0;
-// }
+// // // .navigation {
+// // //   margin-left: 93px;
+// // // }
 
-// .navigation__site li {
-//   margin-right: 50px;
-//   &:last-child{
-//     margin-right: 0;
-//   }
-// }
+// // // .navigation__site {
+// // //   display: flex;
+// // //   list-style: none;
+// // //   margin: 0;
+// // // }
 
-// .navigation__link {
-//   padding: 32px 0;
-//   display: block;
+// // // .navigation__site li {
+// // //   margin-right: 50px;
+// // //   &:last-child{
+// // //     margin-right: 0;
+// // //   }
+// // // }
 
-//   color: $primary-text-color;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//
-//   cursor: pointer;
+// // // .navigation__link {
+// // //   padding: 32px 0;
+// // //   display: block;
 
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// // //   color: $primary-text-color;
+// // //   font-weight: 500;
+// // //   line-height: 1.14;
+// // //   letter-spacing: 0.02em;
+// // //
+// // //   cursor: pointer;
 
-//   &:hover,
-//   &:focus {
-//     color: $logo-color;
-//   }
-// }
+// // //   transition-property: color;
+// // //   transition-duration: 250ms;
+// // //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// .navigation__link--current {
-//   color: $logo-color;
-//   position: relative;
+// // //   &:hover,
+// // //   &:focus {
+// // //     color: $logo-color;
+// // //   }
+// // // }
 
-//   &::after {
-//   content: '';
-//   position: absolute;
-//   width: 100%;
-//   height: 4px;
-//   background-color: $logo-color;
-//   border-radius: 2px;
-//   left: 0;
-//   bottom: 0;
-//   opacity: 1;
-// }
-// }
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 60px;
-}
-.menu-button {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+// // // .navigation__link--current {
+// // //   color: $logo-color;
+// // //   position: relative;
 
-  border: none;
-  z-index: 2;
-  // background-color: transparent;
+// // //   &::after {
+// // //   content: '';
+// // //   position: absolute;
+// // //   width: 100%;
+// // //   height: 4px;
+// // //   background-color: $logo-color;
+// // //   border-radius: 2px;
+// // //   left: 0;
+// // //   bottom: 0;
+// // //   opacity: 1;
+// // // }
+// // // }
 
-  @media screen and (min-width: 767px) {
-    display: none;
-  }
-}
+
 
 .menu-button .icon-cross {
   display: none;
@@ -95,24 +71,7 @@ header {
   display: none;
 }
 
-.menu-container {
-  text-decoration: none;
-  padding: 0 40px;
 
-  &.is-open {
-    display: block;
-  }
-  @media screen and (max-width: 767px) {
-    //  display: none;
-
-    position: absolute;
-    background-color: $white-color;
-    width: 100%;
-    height: 796px;
-    top: 0;
-    left: 0;
-  }
-}
 
 .navigation__link {
   color: $primary-text-color;
@@ -144,3 +103,65 @@ header {
   }
 }
 
+header{
+
+
+  @media screen and (max-width: 767px) {
+    min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+}
+  @media screen and (min-width: 768px) {
+   border-bottom: 1px solid #ececec;
+ }
+
+}
+
+.menu__container {
+  text-decoration: none;
+  padding: 0 40px;
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (max-width: 767px) {
+     display: none;
+
+    position: absolute;
+    background-color: $white-color;
+    width: 100%;
+    height: 796px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.menu-button {
+ position: relative;
+  
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+ line-height: 0;
+ background-color: transparent;
+
+  & svg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+}
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+}
+.icon__close--open{
+  width: 40px;
+  height: 40px;
+
+}
