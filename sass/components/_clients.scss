@@ -1,3 +1,4 @@
+
 .clients__title {
   font-weight: 700;
   line-height: 1.16;
@@ -20,17 +21,20 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 450px;
+    justify-content: space-around;
+    min-width: 450px;
     margin: 0 auto;
     & li {
       margin-bottom: 30px;
+
+     
     }
     & li:nth-last-child(2) {
       margin-bottom: 0;
     }
     & li:last-child {
       margin-bottom: 0;
+      
     }
   }
   @media screen and (min-width: 768px) {
@@ -65,7 +69,7 @@
     border: 1px solid $logo-color;
   }
   @media screen and (max-width: 767px) {
-    width: 210px;
+   min-width: 210px;
   
   }
   @media screen and (min-width: 768px) {
