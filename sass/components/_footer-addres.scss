@@ -15,14 +15,13 @@
 }
 .footer__map {
   @media screen and (max-width: 767px) {
-     margin-bottom: 8px;
+    margin-bottom: 8px;
   }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
-   margin-bottom: 9px;
+    margin-bottom: 9px;
   }
- 
 }
 .footer__map--addres {
   display: inline-block;
@@ -40,17 +39,15 @@
 }
 
 .footer__contact {
-  
-&:last-child {
+  &:last-child {
     margin-bottom: 0;
   }
-   @media screen and (max-width: 767px) {
-     margin-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
   }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
- margin-bottom: 9px;
-  
+    margin-bottom: 9px;
   }
 }

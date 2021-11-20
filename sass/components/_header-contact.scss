@@ -1,9 +1,15 @@
 .contact {
   display: flex;
   text-align: center;
-  margin-left: auto;
+  
   list-style: none;
   padding: 0;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
 
 .contac__item {
@@ -69,12 +75,8 @@
     }
   }
 }
-.contact {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
+
+
 .menu__social {
   display: none;
   @media screen and (max-width: 767px) {
