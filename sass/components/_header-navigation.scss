@@ -41,6 +41,7 @@
 
 header {
   @media screen and (max-width: 767px) {
+  
     min-height: 60px;
     display: flex;
     justify-content: space-between;
@@ -52,11 +53,14 @@ header {
     min-height: 80px;
     display: flex;
     align-items: center;
+   
   }
   & > div {
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
+      
+      
     }
   }
 }
@@ -72,12 +76,7 @@ header {
   }
 }
 
-.contact {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 
 .navigation {
   @media screen and (min-width: 768px) {
@@ -123,7 +122,7 @@ header {
 }
 
 .menu__container {
-  text-decoration: none;
+ 
 
   &.is-open {
     display: flex;
@@ -132,6 +131,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
+    
   }
   @media screen and (max-width: 767px) {
     padding: 0 40px;
@@ -145,14 +145,15 @@ header {
     left: 0;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
   }
 }
 
 .menu-button {
-  position: relative;
-
+    position: relative;
+width: 40px;
+height: 40px;
   padding: 0;
   margin: 0;
 
@@ -161,10 +162,11 @@ header {
   background-color: transparent;
 
   & svg {
+    line-height: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-30%, -20%);
   }
   @media screen and (min-width: 768px) {
     display: none;
