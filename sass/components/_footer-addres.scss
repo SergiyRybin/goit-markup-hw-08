@@ -1,13 +1,28 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+  text-align: center;
 }
 .footer__main {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer__map {
-  margin-bottom: 9px;
+  @media screen and (max-width: 767px) {
+     margin-bottom: 8px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+   margin-bottom: 9px;
+  }
+ 
 }
 .footer__map--addres {
   display: inline-block;
@@ -25,8 +40,17 @@
 }
 
 .footer__contact {
-  margin-bottom: 9px;
-  &:last-child {
+  
+&:last-child {
     margin-bottom: 0;
+  }
+   @media screen and (max-width: 767px) {
+     margin-bottom: 8px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+ margin-bottom: 9px;
+  
   }
 }
