@@ -880,6 +880,7 @@ a {
   .footer__main {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
   }
 }
 
