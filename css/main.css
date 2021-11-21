@@ -1107,6 +1107,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
@@ -1182,6 +1188,7 @@ a {
 .client__link:hover, .client__link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -1211,10 +1218,28 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__main {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__main {
     display: flex;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__main--adress {
+    margin-bottom: 60px;
+    margin-right: 155px;
   }
 }
 
@@ -1264,6 +1289,12 @@ a {
 @media screen and (max-width: 767px) {
   .footer__social {
     margin: 60px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-bottom: 60px;
   }
 }
 
@@ -1377,6 +1408,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer form button {
+    margin: 20px auto 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer form button {
     margin-left: 12px;
@@ -1398,6 +1435,12 @@ a {
 @media screen and (max-width: 767px) {
   .footer__subscribe input {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__subscribe input {
+    width: 450px;
   }
 }
 
