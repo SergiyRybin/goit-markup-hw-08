@@ -9,10 +9,10 @@ body {
   line-height: 1.19;
   cursor: auto;
   font-style: normal;
-
-  @media screen and (min-width: 320px) {
-  overflow-x: hidden;
-}
+min-width: 320px;
+//   @media screen and (min-width: 320px) {
+//   overflow-x: hidden;
+// }
 }
 img {
   display: block;
