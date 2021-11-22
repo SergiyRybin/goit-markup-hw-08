@@ -17,10 +17,11 @@
     max-height: 609px;
   }
   @media screen and (min-width: 768px) {
+     min-width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
-    height: 581px;
+    
   }
 }
 
@@ -184,6 +185,9 @@
     @media screen and (max-width: 767px) {
       margin-left: 4px;
     }
+    @media screen and (min-width: 768px) {
+      margin-left: 4px;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 5px;
     }
@@ -196,7 +200,9 @@
     @media screen and (max-width: 767px) {
       font-size: 12px;
     }
-    
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
   }
 
 
