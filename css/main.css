@@ -434,7 +434,6 @@ a {
 @media screen and (max-width: 767px) {
   header {
     min-height: 60px;
-    max-width: 480px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -448,6 +447,7 @@ a {
     min-height: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -470,9 +470,13 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+.navigation {
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
   .navigation {
-    margin-left: 88px;
+    margin-left: 93px;
   }
 }
 
@@ -537,7 +541,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu__container {
-    display: inline-flex;
+    display: flex;
     align-items: center;
   }
 }
@@ -590,6 +594,7 @@ a {
     display: flex;
     text-align: center;
     padding: 0;
+    margin-left: 305px;
   }
 }
 
@@ -597,11 +602,15 @@ a {
   .contac__item {
     margin-bottom: 12px;
   }
+  .contac__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .contac__item {
     margin-right: 30px;
+    margin-bottom: 0;
   }
   .contac__item:last-child {
     margin-right: 0;
@@ -616,15 +625,24 @@ a {
 
 @media screen and (min-width: 768px) {
   .contac__icon {
+    width: 14px;
+    height: 10px;
     margin-right: 8px;
     fill: #757575;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contac__icon {
+    width: 16px;
+    height: 12px;
   }
 }
 
 .contac__link {
   display: flex;
   align-items: center;
-  color: var(--description-color);
+  color: #757575;
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
@@ -637,6 +655,12 @@ a {
 
 .contac__link:hover, .contac__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .contac__link {
+    font-size: 12px;
+  }
 }
 
 .menu__social--icon {
@@ -705,7 +729,6 @@ a {
 }
 
 .overlay {
-  max-width: 1600px;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
   background-position: center;
@@ -715,6 +738,19 @@ a {
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    background-size: cover;
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    width: 1600px;
   }
 }
 
