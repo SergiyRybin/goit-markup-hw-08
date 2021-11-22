@@ -26,6 +26,13 @@
     line-height: 1.62;
     color: rgba(255, 255, 255, 1);
   }
+   @media screen and (min-width: 768px) {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+    color: rgba(255, 255, 255, 1);
+   }
+
   @media screen and (min-width: 1200px) {
     max-width: 696px;
 
