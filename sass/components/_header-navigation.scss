@@ -132,7 +132,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
-    
+    z-index: 2;
   }
   @media screen and (max-width: 767px) {
     padding: 0 40px;
@@ -161,6 +161,7 @@ height: 40px;
   border: none;
   line-height: 0;
   background-color: transparent;
+  z-index: 3;
 
   & svg {
     line-height: 0;

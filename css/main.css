@@ -525,6 +525,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
@@ -555,6 +556,7 @@ a {
   border: none;
   line-height: 0;
   background-color: transparent;
+  z-index: 3;
 }
 
 .menu-button svg {
