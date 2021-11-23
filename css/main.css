@@ -1154,6 +1154,12 @@ a {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .social {
+    margin-bottom: 24px;
+  }
+}
+
 .social__list {
   margin-right: 10px;
 }
