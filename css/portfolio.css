@@ -823,7 +823,10 @@ a {
 
 @media screen and (max-width: 767px) {
   .portfolio__main {
-    min-height: 450px;
+    margin-bottom: 30px;
+  }
+  .portfolio__main:last-child {
+    margin-bottom: 0;
   }
 }
 
