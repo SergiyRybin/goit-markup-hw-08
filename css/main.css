@@ -1226,17 +1226,13 @@ a {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
+    margin-bottom: -30px;
+    margin-right: -30px;
   }
   .clients__list li {
     margin-bottom: 30px;
-  }
-  .clients__list li:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  .clients__list li:last-child {
-    margin-bottom: 0;
+    margin-right: 30px;
+    flex-basis: calc(100% - 1 * 30px);
   }
 }
 
