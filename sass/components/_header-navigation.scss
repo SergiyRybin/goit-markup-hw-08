@@ -127,6 +127,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
+   
 z-index: 1;
    
   }
@@ -136,7 +137,7 @@ z-index: 1;
 
     position: absolute;
     background-color: $white-color;
-    width: 100%;
+    
 
     top: 0;
     left: 0;
