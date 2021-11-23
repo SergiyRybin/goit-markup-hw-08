@@ -9,65 +9,66 @@
   </head>
   <body>
     <header class="container">
-      <!-- <div> -->
+     
+      
         <a href="" class="logo"
-          ><span class="logo__web">Web</span><span class="logo__studio">Studio</span>
-        </a>
+        ><span class="logo__web">Web</span><span class="logo__studio">Studio</span>
+      </a>
 
-        <div class="menu__container" data-menu>
-          <nav class="navigation">
-            <ul class="navigation__site">
-              <li>
-                <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
-              </li>
-              <li><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
-              <li><a href="" class="navigation__link">Контакты</a></li>
-            </ul>
-          </nav>
+      <div class="menu__container" data-menu>
+        <nav class="navigation">
+          <ul class="navigation__site">
+            <li>
+              <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
+            </li>
+            <li><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+            <li><a href="" class="navigation__link">Контакты</a></li>
+          </ul>
+        </nav>
 
-          <ul class="contact">
-            <li class="contac__item">
-              <a href="mailto:info@devstudio.com" class="contac__link">
-                <svg class="contac__icon" >
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contac__item">
-              <a href="tel:+380961111111" class="contac__link">
-                <svg class="contac__icon" >
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="menu__social">
-            <li>
-              <a href="">Instagram </a>
-            </li>
-            <svg class="menu__social--icon">
-              <use href="./images/icons.svg#line"></use>
-            </svg>
-            <li>
-              <a href="">Twitter </a>
-            </li>
-            <svg class="menu__social--icon">
-              <use href="./images/icons.svg#line"></use>
-            </svg>
-            <li>
-              <a href="">Facebook</a>
-            </li>
-            <svg class="menu__social--icon">
-              <use href="./images/icons.svg#line"></use>
-            </svg>
-            <li>
-              <a href="">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-      <!-- </div> -->
+        <ul class="contact">
+          <li class="contac__item">
+            <a href="mailto:info@devstudio.com" class="contac__link">
+              <svg class="contac__icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contac__item">
+            <a href="tel:+380961111111" class="contac__link">
+              <svg class="contac__icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <ul class="menu__social">
+          <li>
+            <a href="">Instagram </a>
+          </li>
+          <svg class="menu__social--icon">
+            <use href="./images/icons.svg#line"></use>
+          </svg>
+          <li>
+            <a href="">Twitter </a>
+          </li>
+          <svg class="menu__social--icon">
+            <use href="./images/icons.svg#line"></use>
+          </svg>
+          <li>
+            <a href="">Facebook</a>
+          </li>
+          <svg class="menu__social--icon">
+            <use href="./images/icons.svg#line"></use>
+          </svg>
+          <li>
+            <a href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      
       <button
         type="button"
         class="menu-button"
@@ -147,7 +148,24 @@
           <ul class="engaged__list">
             <li class="engaged__image">
               <div>
-                <img src="./images/box1.jpg" alt="Створення сайтів" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occ-1-desktop.webp    1x,
+                      ./images/occ-1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occ-1-desktop.jpg 1x,
+                      ./images/occ-1-desktop.jpg 2x
+                    "
+                  />
+                  <img src="#" alt="Створення сайтів" width="100%" height="100%" />
+                </picture>
                 <div class="engaged__description">
                   <h3>Десктопные приложения</h3>
                 </div>
@@ -155,12 +173,26 @@
             </li>
             <li class="engaged__image">
               <div>
-                <img
-                  src="./images/box2.jpg"
-                  alt="Створення мобільних застосунків"
-                  width="370"
-                  height="294"
-                />
+                                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occ-2-desktop.webp    1x,
+                      ./images/occ-2-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occ-2-desktop.jpg 1x,
+                      ./images/occ-2-desktop.jpg 2x
+                    "
+                  />
+                  <img src="#" alt="Створення мобільних застосунків" width="100%" height="100%" />
+                </picture>
+
+                
                 <div class="engaged__description">
                   <h3>Мобильные приложения</h3>
                 </div>
@@ -168,7 +200,25 @@
             </li>
             <li class="engaged__image">
               <div>
-                <img src="./images/box3.jpg" alt="Розробка дизайну" width="370" height="294" />
+                                                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occ-3-desktop.webp    1x,
+                      ./images/occ-3-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/occ-3-desktop.jpg 1x,
+                      ./images/occ-3-desktop.jpg 2x
+                    "
+                  />
+                  <img src="#" alt="Розробка дизайну" width="100%" height="100%" />
+                </picture>
+
                 <div class="engaged__description">
                   <h3>Дизайнерские решения</h3>
                 </div>
@@ -275,7 +325,7 @@
                 <source
                   media="(max-width: 1199px)"
                   srcset="
-                    ./images/Team2/team-2-tablet.webp 1x,
+                    ./images/Team2/team-2-tablet.webp    1x,
                     ./images/Team2/team-2-tablet@2x.webp 2x
                   "
                   type="image/webp"
@@ -283,7 +333,7 @@
                 <source
                   media="(max-width: 1199px)"
                   srcset="
-                    ./images/Team2/team-2-tablet.jpg 1x,
+                    ./images/Team2/team-2-tablet.jpg    1x,
                     ./images/Team2/team-2-tablet@2x.jpg 2x
                   "
                 />
@@ -342,7 +392,7 @@
               </div>
             </li>
             <li class="team__list">
-                            <picture>
+              <picture>
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/Team3/team-3.webp 1x, ./images/Team3/team-3@2x.webp 2x"
@@ -355,7 +405,7 @@
                 <source
                   media="(max-width: 1199px)"
                   srcset="
-                    ./images/Team3/team-3-tablet.webp 1x,
+                    ./images/Team3/team-3-tablet.webp    1x,
                     ./images/Team3/team-3-tablet@2x.webp 2x
                   "
                   type="image/webp"
@@ -363,7 +413,7 @@
                 <source
                   media="(max-width: 1199px)"
                   srcset="
-                    ./images/Team3/team-3-tablet.jpg 1x,
+                    ./images/Team3/team-3-tablet.jpg    1x,
                     ./images/Team3/team-3-tablet@2x.jpg 2x
                   "
                 />
@@ -386,7 +436,6 @@
                 <img src="#" alt="Николай Тарасов" />
               </picture>
 
-              
               <div>
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -423,7 +472,7 @@
               </div>
             </li>
             <li class="team__list">
-                                          <picture>
+              <picture>
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/Team4/team-4.webp 1x, ./images/Team4/team-4@2x.webp 2x"
@@ -436,7 +485,7 @@
                 <source
                   media="(max-width: 1199px)"
                   srcset="
-                    ./images/Team4/team-4-tablet.webp 1x,
+                    ./images/Team4/team-4-tablet.webp    1x,
                     ./images/Team4/team-4-tablet@2x.webp 2x
                   "
                   type="image/webp"
@@ -444,7 +493,7 @@
                 <source
                   media="(max-width: 1199px)"
                   srcset="
-                    ./images/Team4/team-4-tablet.jpg 1x,
+                    ./images/Team4/team-4-tablet.jpg    1x,
                     ./images/Team4/team-4-tablet@2x.jpg 2x
                   "
                 />
