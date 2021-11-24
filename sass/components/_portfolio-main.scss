@@ -94,7 +94,9 @@
   align-items: center;
 
   & p {
-    
+    @media screen and (max-width: 767px) {
+      font-size: 4vw;
+    }
     font-size: 18px;
     line-height: 1.56;
     color: $white-color;
@@ -113,6 +115,8 @@
   color: $primary-text-color;
 }
 .portfolio__description {
+ 
+
   color: $description-color;
   font-size: 16px;
   line-height: 1.87;

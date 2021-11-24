@@ -537,7 +537,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -609,7 +610,7 @@ a {
   .contact {
     display: flex;
     flex-direction: column-reverse;
-    width: 100vh;
+    width: 100%;
   }
 }
 
@@ -702,7 +703,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .contac__link {
-    font-size: 34px;
+    font-size: 8vw;
     line-height: 1.17;
   }
   .contac__link:hover, .contac__link:focus {
@@ -726,23 +727,23 @@ a {
 @media screen and (max-width: 767px) {
   .menu__social {
     display: flex;
-    flex-wrap: wrap;
   }
   .menu__social a {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 4vw;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
   }
   .menu__social li {
-    flex-basis: calc((100% - 3 * 10px) / 3);
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
-  .menu__social svg {
-    margin: 0 10px;
-  }
-  .menu__social li:first-child {
-    margin-left: 0;
+  .menu__social li:last-child {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
