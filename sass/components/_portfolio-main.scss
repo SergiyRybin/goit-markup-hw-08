@@ -18,7 +18,7 @@
 }
 .portfolio__main {
   background: $white-color;
-  border: 1px solid #eeeeee;
+  
 
   @media screen and (max-width: 767px) {
    
@@ -31,6 +31,7 @@
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
+   
     
   }
   @media screen and (min-width: 1200px) {
@@ -117,6 +118,9 @@
   line-height: 1.87;
 }
 .portfolio__case {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   width: 100%;
    padding: 20px 24px;
 }

@@ -2,6 +2,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
+    width: 100vh;
   }
   @media screen and (min-width: 768px) {
     
@@ -73,13 +74,7 @@ font-size: 12px;
   }
 }
 
-.menu__social--icon{
-  
-  width: 1px;
-  height: 22px;
-  fill: $logo-color;
-  margin-right: 10px;
-}
+
 
 .contac__link {
   color: $description-color;
@@ -110,8 +105,11 @@ font-size: 12px;
   display: none;
   @media screen and (max-width: 767px) {
     display: flex;
-    margin-top: 64px;
-    margin-bottom: 48px;
+    flex-wrap: wrap;
+   
+  
+    
+    
 
     & a {
       font-weight: 500;
@@ -123,16 +121,23 @@ font-size: 12px;
       color: $logo-color;
     }
     & li {
-      margin-right: 10px;
+      flex-basis: calc((100% - 3 * 10px) / 3 );
+      
+      
     }
-    & li:last-child {
-      margin-right: 0;
+    & svg {
+      margin: 0 10px;
+      
     }
+    & li:first-child{
+    margin-left: 0;}
   }
 }
-.menu__social--icon {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 22px;
-  fill: currentColor;
+
+.menu__social--icon{
+  
+  width: 1px;
+  height: 22px;
+  fill: $logo-color;
+
 }
