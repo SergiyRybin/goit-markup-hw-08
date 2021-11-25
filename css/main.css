@@ -928,6 +928,7 @@ a {
 @media screen and (min-width: 1200px) {
   .feature__section {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -951,6 +952,8 @@ a {
 @media screen and (min-width: 1200px) {
   .feature__item {
     margin-right: 30px;
+    margin-bottom: 0;
+    width: 100%;
   }
   .feature__item:last-child {
     margin-right: 0;
@@ -1615,7 +1618,14 @@ a {
   z-index: 99;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 450px) {
+  .modal {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 767px) {
   .modal {
     min-width: 450px;
     max-height: 609px;
@@ -1624,7 +1634,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .modal {
-    min-width: 450px;
+    width: 450px;
   }
 }
 
@@ -1646,6 +1656,13 @@ a {
   color: #212121;
   text-align: center;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal h2 {
+    font-size: 20px;
+    padding: 0 40px;
+  }
 }
 
 .modal button {
@@ -1809,7 +1826,13 @@ a {
   justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 450px) {
+  .modal__agriment label {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 767px) {
   .modal__agriment label {
     font-size: 12px;
   }
