@@ -327,7 +327,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 480px;
+    width: 100%;
   }
 }
 
@@ -1243,10 +1243,9 @@ a {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-bottom: -30px;
+    justify-content: center;
     margin-right: -30px;
+    margin-bottom: -30px;
   }
   .clients__list li {
     margin-bottom: 30px;
@@ -1303,12 +1302,6 @@ a {
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
-  .client__link {
-    min-width: 210px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .client__link {
     width: 170px;
@@ -1316,6 +1309,7 @@ a {
 }
 
 .client__icon {
+  display: block;
   display: flex;
   align-content: center;
   justify-content: center;
