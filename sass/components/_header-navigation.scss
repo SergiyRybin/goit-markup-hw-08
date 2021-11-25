@@ -53,7 +53,7 @@ header {
   }
   @media screen and (min-width: 768px) {display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     border-bottom: 1px solid #ececec;
     min-height: 80px;
   }
@@ -63,6 +63,11 @@ header {
       align-items: center;
     }
   }
+}
+.menu__mobile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .navigation__site {
    @media screen and (max-width: 767px) {
@@ -185,7 +190,7 @@ z-index: 1;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-30%, -25%);
+    transform: translate(-30%, -20%);
   }
   @media screen and (max-width: 767px) {
     display: inline-flex;
