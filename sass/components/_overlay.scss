@@ -1,5 +1,6 @@
 .overlay {
   margin: 0 auto;
+  
   // width: 1600px;
 
   @media screen and (max-width: 767px) {
@@ -47,6 +48,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+z-index: 2;
 }
 .backdrop.is-hidden {
   opacity: 0;
