@@ -1008,6 +1008,7 @@ a {
   .footer__main--adress {
     margin-right: 0;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1095,6 +1096,12 @@ a {
   margin-top: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__social--title {
+    text-align: left;
+  }
+}
+
 .footer__action {
   display: flex;
 }
@@ -1155,6 +1162,12 @@ a {
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe h3 {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {

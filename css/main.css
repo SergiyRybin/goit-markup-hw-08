@@ -1062,12 +1062,6 @@ a {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .social {
-    margin-bottom: 24px;
-  }
-}
-
 .social__list {
   margin-right: 10px;
 }
@@ -1162,6 +1156,7 @@ a {
 
 .team__list > div {
   padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1306,12 +1301,6 @@ a {
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
-  .client__link {
-    max-width: 100%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .client__link {
     width: 170px;
@@ -1371,6 +1360,7 @@ a {
   .footer__main--adress {
     margin-right: 0;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1458,6 +1448,12 @@ a {
   margin-top: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__social--title {
+    text-align: left;
+  }
+}
+
 .footer__action {
   display: flex;
 }
@@ -1518,6 +1514,12 @@ a {
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe h3 {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
