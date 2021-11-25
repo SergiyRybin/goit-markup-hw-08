@@ -9,66 +9,57 @@
   </head>
   <body>
     <header class="container">
-     
-      
-        <a href="" class="logo"
+      <a href="" class="logo"
         ><span class="logo__web">Web</span><span class="logo__studio">Studio</span>
       </a>
-<div class="menu__mobile">
-      <div class="menu__container" data-menu>
-        <nav class="navigation">
-          <ul class="navigation__site">
-            <li>
-              <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
+      <div class="menu__mobile">
+        <div class="menu__container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__site">
+              <li>
+                <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
+              </li>
+              <li><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+              <li><a href="" class="navigation__link">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <ul class="contact">
+            <li class="contac__item">
+              <a href="mailto:info@devstudio.com" class="contac__link">
+                <svg class="contac__icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
-            <li><a href="" class="navigation__link">Контакты</a></li>
+            <li class="contac__item">
+              <a href="tel:+380961111111" class="contac__link">
+                <svg class="contac__icon">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-
-        <ul class="contact">
-          <li class="contac__item">
-            <a href="mailto:info@devstudio.com" class="contac__link">
-              <svg class="contac__icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contac__item">
-            <a href="tel:+380961111111" class="contac__link">
-              <svg class="contac__icon">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <ul class="menu__social">
-          <li>
-            <a href="">Instagram </a>
-          </li>
-          <li>
-            <a href="">Twitter </a>
-          </li>
-          <li>
-            <a href="">Facebook</a>
-          </li>
-          <li>
-            <a href="">LinkedIn</a>
-          </li>
-        </ul>
+          <ul class="menu__social">
+            <li>
+              <a href="">Instagram </a>
+            </li>
+            <li>
+              <a href="">Twitter </a>
+            </li>
+            <li>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-</div>
-      
-      <button
-        type="button"
-        class="menu-button"
-        aria-expanded="false"
-        aria-colspan="menu-button"
-        data-menu-button
-      >
+      <!-- aria-colspan="menu-button" -->
+      <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
         <svg class="icon__close--open" aria-label="Переключатель мобильного меню">
           <use class="icon-cross" href="./images/icons.svg#close-1"></use>
           <use class="icon-menu" href="./images/icons.svg#menu"></use>
@@ -83,7 +74,7 @@
         </div>
       </section>
       <!--features-->
-      <section class="feature__section"> 
+      <section class="feature__section">
         <div class="container">
           <h2 class="visually-hidden">Наши достоинства</h2>
           <ul class="feature">
@@ -144,20 +135,14 @@
                 <picture>
                   <source
                     media="(min-width: 1200px)"
-                    srcset="
-                      ./images/occ-1-desktop.webp    1x,
-                      ./images/occ-1-desktop@2x.webp 2x
-                    "
+                    srcset="./images/occ-1-desktop.webp 1x, ./images/occ-1-desktop@2x.webp 2x"
                     type="image/webp"
                   />
                   <source
                     media="(min-width: 1200px)"
-                    srcset="
-                      ./images/occ-1-desktop.jpg 1x,
-                      ./images/occ-1-desktop.jpg 2x
-                    "
+                    srcset="./images/occ-1-desktop.jpg 1x, ./images/occ-1-desktop.jpg 2x"
                   />
-                  <img src="#" alt="Створення сайтів" width="100%" height="100%" />
+                  <img src="#" alt="Створення сайтів"  />
                 </picture>
                 <div class="engaged__description">
                   <h3>Десктопные приложения</h3>
@@ -166,26 +151,19 @@
             </li>
             <li class="engaged__image">
               <div>
-                                <picture>
+                <picture>
                   <source
                     media="(min-width: 1200px)"
-                    srcset="
-                      ./images/occ-2-desktop.webp    1x,
-                      ./images/occ-2-desktop@2x.webp 2x
-                    "
+                    srcset="./images/occ-2-desktop.webp 1x, ./images/occ-2-desktop@2x.webp 2x"
                     type="image/webp"
                   />
                   <source
                     media="(min-width: 1200px)"
-                    srcset="
-                      ./images/occ-2-desktop.jpg 1x,
-                      ./images/occ-2-desktop.jpg 2x
-                    "
+                    srcset="./images/occ-2-desktop.jpg 1x, ./images/occ-2-desktop.jpg 2x"
                   />
-                  <img src="#" alt="Створення мобільних застосунків" width="100%" height="100%" />
+                  <img src="#" alt="Створення мобільних застосунків"  />
                 </picture>
 
-                
                 <div class="engaged__description">
                   <h3>Мобильные приложения</h3>
                 </div>
@@ -193,23 +171,17 @@
             </li>
             <li class="engaged__image">
               <div>
-                                                <picture>
+                <picture>
                   <source
                     media="(min-width: 1200px)"
-                    srcset="
-                      ./images/occ-3-desktop.webp    1x,
-                      ./images/occ-3-desktop@2x.webp 2x
-                    "
+                    srcset="./images/occ-3-desktop.webp 1x, ./images/occ-3-desktop@2x.webp 2x"
                     type="image/webp"
                   />
                   <source
                     media="(min-width: 1200px)"
-                    srcset="
-                      ./images/occ-3-desktop.jpg 1x,
-                      ./images/occ-3-desktop.jpg 2x
-                    "
+                    srcset="./images/occ-3-desktop.jpg 1x, ./images/occ-3-desktop.jpg 2x"
                   />
-                  <img src="#" alt="Розробка дизайну" width="100%" height="100%" />
+                  <img src="#" alt="Розробка дизайну" />
                 </picture>
 
                 <div class="engaged__description">
@@ -221,7 +193,7 @@
         </div>
       </section>
       <!--team-->
-      <section class="section team ">
+      <section class="section team">
         <div class="container">
           <h2 class="team__main-title">Наша команда</h2>
           <ul class="team__item">
@@ -267,7 +239,7 @@
                   "
                 />
 
-                <img src="#" alt="Игорь Демьяненко" width="100%"/>
+                <img src="#" alt="Игорь Демьяненко" />
               </picture>
               <div>
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -346,7 +318,7 @@
                   "
                 />
 
-                <img src="#" alt="Ольга Репина" width="100%"/>
+                <img src="#" alt="Ольга Репина" />
               </picture>
 
               <div>
@@ -426,7 +398,7 @@
                   "
                 />
 
-                <img src="#" alt="Николай Тарасов" width="100%"/>
+                <img src="#" alt="Николай Тарасов" />
               </picture>
 
               <div>
@@ -506,7 +478,7 @@
                   "
                 />
 
-                <img src="#" alt="Михаил Ермаков" width="100%"/>
+                <img src="#" alt="Михаил Ермаков" />
               </picture>
 
               <div>
