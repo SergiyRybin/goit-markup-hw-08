@@ -285,6 +285,10 @@ body {
   width: 100vw;
 }
 
+body .menu__container.is-open {
+  position: fixed;
+}
+
 @media screen and (min-width: 320px) {
   body {
     overflow-x: hidden;

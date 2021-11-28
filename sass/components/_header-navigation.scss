@@ -22,7 +22,7 @@
 
 .navigation__link.navigation__link--current {
   @media screen and (max-width: 767px) {
-color: $logo-color;
+    color: $logo-color;
   }
   @media screen and (min-width: 768px) {
     color: $logo-color;
@@ -51,7 +51,8 @@ header {
     align-items: center;
     border-bottom: none;
   }
-  @media screen and (min-width: 768px) {display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
@@ -64,17 +65,17 @@ header {
     }
   }
 }
-.menu__mobile{
+.menu__mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .navigation__site {
-   @media screen and (max-width: 767px) {
-    }
+  @media screen and (max-width: 767px) {
+  }
   @media screen and (min-width: 768px) {
     display: flex;
-    
+
     & li {
       margin-right: 50px;
     }
@@ -88,19 +89,17 @@ header {
   @media screen and (max-width: 767px) {
     // margin-right: 40px;
     margin-bottom: 32px;
-&:last-child{
-  margin-bottom: 0;
-}
-  
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) {
     margin-right: 50px;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
 }
-
 
 .navigation {
   margin: 0;
@@ -136,20 +135,18 @@ header {
   }
 }
 
-
 .menu__container {
- 
   &.is-open {
     display: flex;
 
-    
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     width: 100%;
-   
-z-index: 1;
-   
+
+    z-index: 1;
+
+  
   }
   @media screen and (max-width: 767px) {
     padding: 48px 40px;
@@ -157,13 +154,12 @@ z-index: 1;
 
     position: absolute;
     background-color: $white-color;
-    
 
     top: 0;
     left: 0;
   }
   @media screen and (min-width: 768px) {
- margin-left: 88px ;
+    margin-left: 88px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -183,7 +179,7 @@ z-index: 1;
   border: none;
   line-height: 0;
   background-color: transparent;
- z-index: 2;
+  z-index: 2;
 
   & svg {
     line-height: 0;
