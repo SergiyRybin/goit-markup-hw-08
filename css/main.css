@@ -702,26 +702,16 @@ a {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .contac__link {
+    font-size: 5vw;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contac__link {
     font-size: 12px;
-  }
-}
-
-.contac__link {
-  color: #757575;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-@media screen and (max-width: 767px) {
-  .contac__link {
-    font-size: 8vw;
-    line-height: 1.17;
-  }
-  .contac__link:hover, .contac__link:focus {
-    color: #2196f3;
   }
 }
 
@@ -1352,7 +1342,7 @@ a {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer__list {
     margin-top: 20px;
   }
